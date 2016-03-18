@@ -23,3 +23,7 @@ Lessons
   return values can be referenced and assigned in the function. Pretty cool.
 
 * variables - this shows variable declarations at a package and function scope.
+
+* variables (init) - demonstrates initializers with variable declarations. The declaration at
+  the function scope omits the type. And in that case, the variable assumes the type of the
+  initializer.
