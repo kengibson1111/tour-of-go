@@ -27,3 +27,7 @@ Lessons
 * variables (init) - demonstrates initializers with variable declarations. The declaration at
   the function scope omits the type. And in that case, the variable assumes the type of the
   initializer.
+
+* variables (short) - introduces the short assignment (:=) instead of a variable declaration
+  with an initializer omitting the type. For variables, this is only allowed at the function
+  scope.
