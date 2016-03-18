@@ -14,3 +14,5 @@ Lessons
   starts with an attempt to use math.pi instead of math.Pi.
 
 * functions - shows the use of a private function.
+
+* functions (params) - same as the previous lesson, but shows type sharing.
