@@ -12,3 +12,5 @@ Lessons
 
 * exports - shows how you can only access exported functions in a package. The exercise
   starts with an attempt to use math.pi instead of math.Pi.
+
+* functions - shows the use of a private function.
