@@ -42,3 +42,6 @@ Lessons
 
 * types (conversion) - example showing the required explicit type conversion. If you remove
   the float64 or uint type conversion in the sample, you'll get a compile error.
+
+* types (inference) - simple example showing type inference. Change the variable value and see
+  how the type changes.
