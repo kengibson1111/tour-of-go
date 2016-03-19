@@ -68,3 +68,5 @@ Lessons
 
 * if (short) - the if statement can have a "short assignment" init before the condition. Like a for loop
   without a post statement.
+
+* if (else) - adding the else to the previous sample.
