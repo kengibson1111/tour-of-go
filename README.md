@@ -59,3 +59,5 @@ Lessons
 
 * forloop (while) - because init and post statements are optional, this is how to make a for loop
   act like a while.
+
+* whileloop - same as previous sample only drop the leading and trailing semicolons.
