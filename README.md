@@ -54,3 +54,5 @@ Lessons
   Small uses Big in its assignment, I would also assume Small is a float. In the types (conversion)
   lesson, the conversion between types had to be explicit. In this lesson, Small is converted to an
   int and I don't get compile or runtime errors.
+
+* forloop - basic for loop that looks like Java except for the variable short assignment :=.
