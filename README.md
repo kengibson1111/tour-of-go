@@ -36,3 +36,6 @@ Lessons
   with type inference. Notice const does not use short assignment like a variable. = instead
   of :=. Although not stated yet in the lessons, uppercase constants and variables could be
   exported from a package just like a function. Not sure yet.
+
+* zero - if a var is not initialized with a value, it is assigned zero. 0 for numerics, false
+  for bools, "" for strings.
