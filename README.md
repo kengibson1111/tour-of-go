@@ -63,3 +63,5 @@ Lessons
 * whileloop - same as previous sample only drop the leading and trailing semicolons.
 
 * forever - building on the previous sample, omit the condition and you have the infinite for loop.
+
+* ifstmt - basics of the if statement.
