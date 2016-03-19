@@ -25,9 +25,14 @@ Lessons
 * variables - this shows variable declarations at a package and function scope.
 
 * variables (init) - demonstrates initializers with variable declarations. The declaration at
-  the function scope omits the type. And in that case, the variable assumes the type of the
+  the function scope omits the type. And in that case, the variable infers the type of the
   initializer.
 
 * variables (short) - introduces the short assignment (:=) instead of a variable declaration
   with an initializer omitting the type. For variables, this is only allowed at the function
   scope.
+
+* types (basic) - this shows commonly used types. A factored var is used. First use of const
+  with type inference. Notice const does not use short assignment like a variable. = instead
+  of :=. Although not stated yet in the lessons, uppercase constants and variables could be
+  exported from a package just like a function. Not sure yet.
