@@ -56,3 +56,6 @@ Lessons
   int and I don't get compile or runtime errors.
 
 * forloop - basic for loop that looks like Java except for the variable short assignment :=.
+
+* forloop (while) - because init and post statements are optional, this is how to make a for loop
+  act like a while.
