@@ -70,3 +70,5 @@ Lessons
   without a post statement.
 
 * if (else) - adding the else to the previous sample.
+
+* EXERCISE (loops) - not the cleanest code, but it did meet the exercise requirements.
