@@ -90,3 +90,9 @@ Lessons
   pointers are not quite like C pointers because there is no arithmetic. But the efficiencies are there, and
   pointer arithmetic can venture into illegal process memory space anyway :). Function call stacks can be really
   tight like in C. This lesson is focusing only on a pointer to a primitive type.
+
+* structs - and the fun continues. objects? Uh, no. And there is a way to define and export a "method" meant
+  specifically for a struct, but that's later. Functions, pointers, structs - back to the future. For this lesson
+  I would assume that the struct instance is being created on the stack (not heap). Whether or not
+  fmt.Println copies the struct instance or just uses a pointer to the struct for the call stack is unknown
+  at this point.
