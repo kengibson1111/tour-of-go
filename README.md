@@ -77,3 +77,6 @@ Lessons
 
 * switch (order) - this emphasizes switch statement order and the built-in case break when a statement
   evaluates to true. In Java, you can stack case statements - not so with golang.
+
+* switch (nocond) - you can control the condition statements at the case level instead of the top-level switch.
+  Slick way of building long if-then-else chains.
