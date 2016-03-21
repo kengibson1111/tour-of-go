@@ -74,3 +74,6 @@ Lessons
 * EXERCISE (loops) - not the cleanest code, but it did meet the exercise requirements.
 
 * switch - basic switch statement.
+
+* switch (order) - this emphasizes switch statement order and the built-in case break when a statement
+  evaluates to true. In Java, you can stack case statements - not so with golang.
