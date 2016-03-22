@@ -119,3 +119,9 @@ Lessons
   seems like a small point, but when you assign and reassign string (char array pointer) values this could be
   expensive for the runtime. golang hides all of the string complexity in the language and runtime, but the
   complexity has to be addressed eventually.
+
+* slices - this shows how effective pointers are since a slice is a pointer to an array. Building on comments
+  from the previous lesson, I believe the golang implementation of a string is a slice pointing to a char array.
+  The sample code creates an array of ints using literals. Then the pointer to the int array is created. That is
+  the slice. I would think if a function needs an array as a parameter, you want to use a slice for that because
+  that is the best optimization of the function call stack.
