@@ -96,3 +96,5 @@ Lessons
   I would assume that the struct instance is being created on the stack (not heap). Whether or not
   fmt.Println copies the struct instance or just uses a pointer to the struct for the call stack is unknown
   at this point.
+
+* struct (fields) - fields are accessed via dot notation.
