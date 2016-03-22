@@ -150,3 +150,6 @@ Lessons
   because the array storage for b is only 5 ints. The capacity for d has to be 3 because from the element that d
   is pointing at, there are only 3 elements left. The array length is part of the type and never grows. So
   slices seem to be a way to circumvent array limitations (which exist to provide runtime consistency).
+
+* slices (nil) - zero value for a slice is nil. length and capacity are both 0. I assume the pointer value is also
+  0.
