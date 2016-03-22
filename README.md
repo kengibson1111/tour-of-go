@@ -118,8 +118,7 @@ Lessons
   allocates memory for the char arrays on the stack or heap depending on the underlying implementation. This
   seems like a small point, but when you assign and reassign string (char array pointer) values this could be
   expensive for the runtime. golang hides all of the string complexity in the language and runtime, but the
-  complexity has to be addressed eventually. And based on what the code looks like, I would assume char array
-  memory for each string is on the stack.
+  complexity has to be addressed eventually.
 
 * slices - this shows how effective pointers are since a slice is a pointer to an array. Building on comments
   from the previous lesson, I believe the golang implementation of a string is a slice pointing to a char array.
@@ -134,4 +133,8 @@ Lessons
   for each string array. 9 char arrays, 9 slices to char arrays (strings), 3 string arrays, 3 slices to string
   arrays. So far. Then the array of string slices is created followed by the slice for that array. And for
   the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
-  code. I would assume the stack because that is what the code looks like to me.
+  code.
+
+* slices (range) - when a slice subset is specified using [], a new pointer to the same array is created. This
+  is where golang has made a slice more than just a pointer. Only the specified range is visible in the newly
+  created slice.
