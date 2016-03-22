@@ -140,7 +140,7 @@ Lessons
   is where golang has made a slice more than just a pointer. Only the specified range is visible in the newly
   created slice.
 
-* slices (make) - the introduction of make() which I believe is the way to allocate memory on the heap. The int
+* slices (make) - the introduction of make() which could be allocating on the stack or heap. The int
   array for a is created and the slice is pointing to the start of the array storage. The int array for b is
   created and the slice is pointing to the array storage for b. Two slice pointers, two separate int arrays. Then
   c is a new slice pointing to a subset of b's array storage. The pointer values for b and c are the same, but c
