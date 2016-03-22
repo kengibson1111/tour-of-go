@@ -111,14 +111,15 @@ Lessons
   a struct is so small, but it could be a big deal with more complex structs.
 
 * arrays - simple example creating an array on the stack. arrays have a hard limit - you specify the length
-  and the array is only that length. Thoughts on the golang string implementation: just an assumption, but it
-  looks like a string is a pointer to a char array. Memory for the char array is not initialized until the string
-  is initialized with a value. Then when a string is initialized (like in the sample code), char array memory
-  is allocated and set. So the sample code creates an array of 2 char array pointers on the stack. Then golang
-  allocates memory for the char arrays on the stack or heap depending on the underlying implementation. This
-  seems like a small point, but when you assign and reassign string (char array pointer) values this could be
-  expensive for the runtime. golang hides all of the string complexity in the language and runtime, but the
-  complexity has to be addressed eventually.
+  and the array is only that length. And the length is embedded in the type, so [4]int and [5]int are actually
+  different types. Arrays are values, not pointers. Thoughts on the golang string implementation: just an
+  assumption, but it looks like a string is a pointer to a char array. Memory for the char array is not
+  initialized until the string is initialized with a value. Then when a string is initialized (like in the
+  sample code), char array memory is allocated and set. So the sample code creates an array of 2 char array
+  pointers on the stack. Then golang allocates memory for the char arrays on the stack or heap depending on
+  the underlying implementation. This seems like a small point, but when you assign and reassign string (char
+  array pointer) values this could be expensive for the runtime. golang hides all of the string complexity in
+  the language and runtime, but the complexity has to be addressed eventually.
 
 * slices - this shows how effective pointers are since a slice is a pointer to an array. Building on comments
   from the previous lesson, I believe the golang implementation of a string is a slice pointing to a char array.
@@ -138,3 +139,14 @@ Lessons
 * slices (range) - when a slice subset is specified using [], a new pointer to the same array is created. This
   is where golang has made a slice more than just a pointer. Only the specified range is visible in the newly
   created slice.
+
+* slices (make) - the introduction of make() which could be allocating on the stack or heap. The int
+  array for a is created and the slice is pointing to the start of the array storage. The int array for b is
+  created and the slice is pointing to the array storage for b. Two slice pointers, two separate int arrays. Then
+  c is a new slice pointing to a subset of b's array storage. The pointer values for b and c are the same, but c
+  is only referencing the first two elements. So the length is 2, but the capacity is still 5 because c is pointing
+  at the same element as b. Then d is created to start at the 3rd element of whatever c is pointing at (happens
+  to be the same that b is pointing at). Also d could have been defined as c[2:] and the result would be the same
+  because the array storage for b is only 5 ints. The capacity for d has to be 3 because from the element that d
+  is pointing at, there are only 3 elements left. The array length is part of the type and never grows. So
+  slices seem to be a way to circumvent array limitations (which exist to provide runtime consistency).
