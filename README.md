@@ -159,3 +159,6 @@ Lessons
   optimization reasons.
 
 * range - the range keyword can be used for slices and maps. 2 return values - the index and the value.
+
+* range (skip) - shows how to skip the index if you just want a range value and how to skip the value if
+  you just want the index.
