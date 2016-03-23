@@ -186,3 +186,5 @@ Lessons
 * functions (closure) - closures are cool. They can reference variables outside of their local function scope.
   So in the sample, adder() is returning a closure that can mutate its own sum variable. Seems like a potential
   implementation for basic map reductions.
+
+* EXERCISE (functions) - not an optimized implementation, but I wanted to do something with slices.
