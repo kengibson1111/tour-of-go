@@ -182,3 +182,7 @@ Lessons
   you can pass any function that meets the parameter spec and it will do something with the values 3 and 4.
   math.Pow meets the spec, but you can also define your own function that also meets the spec. compute()
   doesn't care.
+
+* functions (closure) - closures are cool. They can reference variables outside of their local function scope.
+  So in the sample, adder() is returning a closure that can mutate its own sum variable. Seems like a potential
+  implementation for basic map reductions.
