@@ -167,3 +167,5 @@ Lessons
   it isn't the best code, but it works.
 
 * maps - basic example of map use.
+
+* maps (literals) - literals can be used for maps - like structs.
