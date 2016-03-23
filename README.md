@@ -169,3 +169,5 @@ Lessons
 * maps - basic example of map use.
 
 * maps (literals) - literals can be used for maps - like structs.
+
+* maps (literals inference) - same as last example, but demonstrating type inference in the literal.
