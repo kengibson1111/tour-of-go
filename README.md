@@ -165,3 +165,5 @@ Lessons
 
 * EXERCISE (slices) - this was fun to do. After finishing and comparing with other answers across github,
   it isn't the best code, but it works.
+
+* maps - basic example of map use.
