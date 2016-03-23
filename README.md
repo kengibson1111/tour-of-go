@@ -121,27 +121,27 @@ Lessons
   array pointer) values this could be expensive for the runtime. golang hides all of the string complexity in
   the language and runtime, but the complexity has to be addressed eventually.
 
-* slices - this shows how effective pointers are since a slice is a pointer to an array. Building on comments
-  from the previous lesson, I believe the golang implementation of a string is a slice pointing to a char array.
-  The sample code creates an array of ints using literals. Then the pointer to the int array is created. That is
-  the slice. I would think if a function needs an array as a parameter, you want to use a slice for that because
+* slices - this shows how effective pointers are since a slice has a pointer to a backing array. Building on comments
+  from the previous lesson, I believe the golang implementation of a string is a slice with a pointer to a char array.
+  The sample code creates an array of ints using literals. Then the slice to the int array is created. The slice
+  has the pointer. I would think if a function needs an array as a parameter, you want to use a slice for that because
   that is the best optimization of the function call stack.
 
-* slices (of slice) - and since a slice is a pointer, the array type can be anything including a slice which,
-  again, is a pointer. Similar to pointer of pointers in C. There is a lot going on in the sample even though
-  much is hidden in the language. Each literal string is a slice to a char array. So the memory for the
-  char array slices (strings) have to be created first. Then each string array is created followed by a slice
+* slices (of slice) - and since a slice has a pointer to a backing array, the array type can be anything including a
+  slice which, again, has a backing array pointer. Similar to pointer of pointers in C. There is a lot going on in the
+  sample even though much is hidden in the language. Each literal string is a slice to a char array. So the memory for
+  the char array slices (strings) have to be created first. Then each string array is created followed by a slice
   for each string array. 9 char arrays, 9 slices to char arrays (strings), 3 string arrays, 3 slices to string
   arrays. So far. Then the array of string slices is created followed by the slice for that array. And for
   the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
   code.
 
-* slices (range) - when a slice subset is specified using [], a new pointer to the same array is created. This
+* slices (range) - when a slice subset is specified using [], a new pointer to the same backing array is created. This
   is where golang has made a slice more than just a pointer. Only the specified range is visible in the newly
-  created slice.
+  created slice because the pointer, capacity, and length are unique to the newly created slice.
 
 * slices (make) - the introduction of make() which could be allocating on the stack or heap. The int
-  array for a is created and the slice is pointing to the start of the array storage. The int array for b is
+  array for a is created and the slice is pointing to the start of the backing array storage. The int array for b is
   created and the slice is pointing to the array storage for b. Two slice pointers, two separate int arrays. Then
   c is a new slice pointing to a subset of b's array storage. The pointer values for b and c are the same, but c
   is only referencing the first two elements. So the length is 2, but the capacity is still 5 because c is pointing
@@ -153,3 +153,7 @@ Lessons
 
 * slices (nil) - zero value for a slice is nil. length and capacity are both 0. I assume the pointer value is also
   0.
+
+* slices (append) - this is another function that hides so much complexity around array storage. This shows how
+  length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
+  optimization reasons.
