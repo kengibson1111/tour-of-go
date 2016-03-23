@@ -157,3 +157,5 @@ Lessons
 * slices (append) - this is another function that hides so much complexity around array storage. This shows how
   length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
   optimization reasons.
+
+* range - the range keyword can be used for slices and maps. 2 return values - the index and the value.
