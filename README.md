@@ -209,3 +209,9 @@ Lessons
   to give the designer/developer the ability to make methods immutable. Anything that creates or updates a type
   instance should have a pointer receiver. In the sample code, change the pointer receiver to a value receiver and
   see what happens. SIDE NOTE: notice that dot notation is used to access methods with both types of receivers.
+
+* functions (pointers) - just to drive home the concept, methods are functions. So the same arguments apply to passing
+  a value of a type instance to prevent updates and a pointer of the type instance to allow updates. In the last
+  lesson, you changed the pointer receiver to a value receiver. In this sample, change the *Vertex to Vertex in Scale()
+  and you should see a compile error. Fix it and try again. This is one area where methods may have an advantage over
+  simple functions.
