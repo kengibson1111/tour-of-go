@@ -189,6 +189,9 @@ Lessons
 
 * EXERCISE (functions) - not an optimized implementation, but I wanted to do something with slices.
 
-* methods - golang does not have objects, but they do have types. Types can be associated with primitives, structs,
+* methods - golang does not have objects, but it does have types. Types can be associated with primitives, structs,
   etc. If you add a type receiver argument in a function definition between the keyword func and the name of the
   function, you have now associated a type to a function. And that is golang's version of a method.
+
+* methods (func) - this is just emphasizing that methods are functions. The sample code is the same as the previous
+  lesson without the type receiver argument.
