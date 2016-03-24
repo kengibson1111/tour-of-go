@@ -215,3 +215,7 @@ Lessons
   lesson, you changed the pointer receiver to a value receiver. In this sample, change the *Vertex to Vertex in Scale()
   and you should see a compile error. Fix it and try again. This is one area where methods may have an advantage over
   simple functions.
+
+* methods (pointersind) - emphasizing the indirection flexibility with methods. Functions that have a pointer
+  parameter must take a pointer. Methods that have a pointer receiver can take a value or a pointer. golang figures
+  it out.
