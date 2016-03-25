@@ -219,3 +219,7 @@ Lessons
 * methods (pointersind) - emphasizing the indirection flexibility with methods. Functions that have a pointer
   parameter must take a pointer. Methods that have a pointer receiver can take a value or a pointer. golang figures
   it out.
+
+* methods (pointersindrev) - and the indirection flexibility with methods is true in reverse, too. Functions
+  that have a value parameter must take a value. Methods that have a value receiver can take a pointer or value.
+  golang figures it out.
