@@ -276,3 +276,5 @@ Lessons
 
 * readers - the io.Reader interface has many implementations offered from golang. In this sample, there was no
   need to build an implementation.
+
+* EXERCISE (readers) - a Reader implementation was the exercise.
