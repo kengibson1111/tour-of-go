@@ -231,3 +231,7 @@ Lessons
 
 * interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
   method signature and it implicitly implements the interface.
+
+* interfaces (value) - when an interface is declared, it has an empty value and type. The compiler checks to make
+  sure each interface binding is legal. At runtime, the interface value and type are filled. Then one of the
+  method signatures can be called exercising behavior based on the interface's value and type.
