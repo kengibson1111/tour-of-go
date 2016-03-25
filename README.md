@@ -281,3 +281,5 @@ Lessons
 
 * EXERCISE (readersrot13) - another Reader implementation - pretty fun to figure out. Maybe not the most efficient
   code, but a quick implementation.
+
+* images - introduction to the Image interface.
