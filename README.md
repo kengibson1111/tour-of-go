@@ -278,3 +278,6 @@ Lessons
   need to build an implementation.
 
 * EXERCISE (readers) - a Reader implementation was the exercise.
+
+* EXERCISE (readersrot13) - another Reader implementation - pretty fun to figure out. Maybe not the most efficient
+  code, but a quick implementation.
