@@ -226,3 +226,5 @@ Lessons
   methods should be either value or pointer but not a mix of both. And as mentioned in the lesson "methods (pointers)"
   you do get better function call stack performance using a pointer receiver for methods that only read if the
   type is a large struct.
+
+* interfaces - introduction of an interface type which is the same as in Java - a set of method signatures.
