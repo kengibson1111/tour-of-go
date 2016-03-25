@@ -232,6 +232,12 @@ Lessons
 * interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
   method signature and it implicitly implements the interface.
 
-* interfaces (value) - when an interface is declared, it has an empty value and type. The compiler checks to make
+* interfaces (value) - when an interface is declared, it has a nil value and type. The compiler checks to make
   sure each interface binding is legal. At runtime, the interface value and type are filled. Then one of the
   method signatures can be called exercising behavior based on the interface's value and type.
+
+* interfaces (nilvalues) - this is where it starts getting interesting. In the previous lesson, suppose t was nil
+  when i was assigned. In Java, that would mean a null interface and a potential null pointer exception. In golang,
+  the interface is not nil when declared. It has a nil concrete value and type before assignment. After assignment,
+  the type is not nil and the interface is bound to a matching method with the right receiver. The concrete value
+  could be nil, but in golang the method implementation can gracefully check for a nil concrete value. Slick.
