@@ -269,3 +269,7 @@ Lessons
   error interface. So the runtime knows MyError implements the error interface and binds it. Now MyError's
   Error() method can be called through the error interface by any other function. In this case, Println
   can call it.
+
+* EXERCISE (errors) - implemented based on the instructions. The error type does not have to be a struct. In
+  this case, it is a float64. Similar to the previous lesson trying to emphasize golang best practices around
+  error generation and handling.
