@@ -228,3 +228,6 @@ Lessons
   type is a large struct.
 
 * interfaces - introduction of an interface type which is the same as in Java - a set of method signatures.
+
+* interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
+  method signature and it implicitly implements the interface.
