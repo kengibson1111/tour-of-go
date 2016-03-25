@@ -256,3 +256,6 @@ Lessons
   there is any chance that the interface type does not match the assertion.
 
 * interfaces (switch) - you can use a short assignment to a type assertion in a switch statement.
+
+* stringer - Stringer is an interface from the core package fmt. The String() method signature is like the Java
+  toString().
