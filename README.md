@@ -203,11 +203,9 @@ Lessons
   there is a way to define a type to a float64 and then define a method for the custom type.
 
 * methods (pointers) - if you want to modify a type instance, the receiver for the method has to be a pointer to
-  the type. So anything that reads from a type instance should probably have a value receiver. The only argument
+  the type. So anything that reads from a type instance could have just a value receiver. The only argument
   against that is function call stack efficiency since having a value receiver means the entire type instance VALUE
-  will be copied to the call stack for the method. But I would argue that it is better to keep the types streamlined
-  to give the designer/developer the ability to make methods immutable. Anything that creates or updates a type
-  instance should have a pointer receiver. In the sample code, change the pointer receiver to a value receiver and
+  will be copied to the call stack for the method. In the sample code, change the pointer receiver to a value receiver and
   see what happens. SIDE NOTE: notice that dot notation is used to access methods with both types of receivers.
 
 * functions (pointers) - just to drive home the concept, methods are functions. So the same arguments apply to passing
@@ -223,3 +221,8 @@ Lessons
 * methods (pointersindrev) - and the indirection flexibility with methods is true in reverse, too. Functions
   that have a value parameter must take a value. Methods that have a value receiver can take a pointer or value.
   golang figures it out.
+
+* methods (receiver) - this verifies a golang "good practice" for receivers. For a given type, receivers for all
+  methods should be either value or pointer but not a mix of both. And as mentioned in the lesson "methods (pointers)"
+  you do get better function call stack performance using a pointer receiver for methods that only read if the
+  type is a large struct.
