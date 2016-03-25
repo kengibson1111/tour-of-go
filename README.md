@@ -254,3 +254,5 @@ Lessons
   assertion worked. Just the value can be returned, but that will cause a runtime error if the interface type
   does not match the assertion. So it is a good practice to return the value and bool from an assertion if
   there is any chance that the interface type does not match the assertion.
+
+* interfaces (switch) - you can use a short assignment to a type assertion in a switch statement.
