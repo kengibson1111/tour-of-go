@@ -232,12 +232,17 @@ Lessons
 * interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
   method signature and it implicitly implements the interface.
 
-* interfaces (value) - when an interface is declared, it has a nil value and type. The compiler checks to make
-  sure each interface binding is legal. At runtime, the interface value and type are filled. Then one of the
-  method signatures can be called exercising behavior based on the interface's value and type.
+* interfaces (value) - when an interface is declared, it has a nil value and type. It is considered a nil
+  interface. The compiler checks to make sure each interface binding is legal. At runtime, the interface
+  value and type are filled when the interface is assigned. Then one of the method signatures can be called
+  exercising behavior based on the interface's value and type.
 
 * interfaces (nilvalues) - this is where it starts getting interesting. In the previous lesson, suppose t was nil
   when i was assigned. In Java, that would mean a null interface and a potential null pointer exception. In golang,
-  the interface is not nil when declared. It has a nil concrete value and type before assignment. After assignment,
-  the type is not nil and the interface is bound to a matching method with the right receiver. The concrete value
-  could be nil, but in golang the method implementation can gracefully check for a nil concrete value. Slick.
+  the interface is not nil after assignment. It has a nil concrete value and type before assignment and is a nil
+  interface. After assignment, the type is not nil and the interface is bound to a matching method with the right
+  receiver. The concrete value could be nil, but in golang the method implementation can gracefully check for a nil
+  concrete value. Slick.
+
+* interfaces (nil) - you can still get into trouble calling a method signature on an interface that has not been
+  assigned yet. It causes a runtime error because a method with the correct receiver has not been bound yet.
