@@ -311,3 +311,11 @@ Lessons
   A routine is created and then main() waits on the range keyword. When the buffer has 10 ints, the loop
   activates because range can receive. Just before the routine shuts down, it closes the channel. This tells
   range to kick out of the loop. Cool. Again, write the same functionality in Java and compare the code :).
+
+* channels (select) - another way to do the previous lesson without using close(). select waits until a
+  channel operation is ready, and if multiple channel operations are ready the channel operation order
+  is not guaranteed. Create 2 channels - not buffered. One channel is the main processing channel and the other
+  is a "quit" channel. fibonacci() has an endless loop sending ints on the main processing channel
+  and receiving ints on the "quit" channel. When one "quit" int is received, fibonacci() ends which also
+  ends main(). The Go routine receives 10 ints from the main processing channel and sends one int on the
+  "quit" channel.
