@@ -3,7 +3,7 @@
 golang.org offers a Tour of Go. I took the tour on my laptop. Not the cleanest exercise
 code, but I was just trying to satisfy the exercise requirements.
 
-Lessons
+##Lessons
 
 * packages - illustrates a factored import and how exported functions from packages have
   to be capitalized. First look at Println. mains run from package main.
@@ -329,3 +329,10 @@ Lessons
 * mutex - so channel communication is great for synchronizing routine execution. But if you don't need
   execution synchronization and only need data synchronization, golang offers a mutex. The sample
   shows this by starting 1000 routines all interested in the same data.
+
+* EXERCISE (mutex) - last exercise building on previous lesson.
+
+##Summary
+
+Pretty fun to do. Most of the code is supplied in the Tour. Hopefully it will help others get off the ground
+and start exploring golang.
