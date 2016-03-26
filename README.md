@@ -113,25 +113,25 @@ code, but I was just trying to satisfy the exercise requirements.
 * arrays - simple example creating an array on the stack. arrays have a hard limit - you specify the length
   and the array is only that length. And the length is embedded in the type, so [4]int and [5]int are actually
   different types. Arrays are values, not pointers. Thoughts on the golang string implementation: just an
-  assumption, but it looks like a string is a pointer to a char array. Memory for the char array is not
+  assumption, but it looks like a string is a pointer to a byte array. Memory for the byte array is not
   initialized until the string is initialized with a value. Then when a string is initialized (like in the
-  sample code), char array memory is allocated and set. So the sample code creates an array of 2 char array
-  pointers on the stack. Then golang allocates memory for the char arrays on the stack or heap depending on
-  the underlying implementation. This seems like a small point, but when you assign and reassign string (char
+  sample code), byte array memory is allocated and set. So the sample code creates an array of 2 byte array
+  pointers on the stack. Then golang allocates memory for the byte arrays on the stack or heap depending on
+  the underlying implementation. This seems like a small point, but when you assign and reassign string (byte
   array pointer) values this could be expensive for the runtime. golang hides all of the string complexity in
   the language and runtime, but the complexity has to be addressed eventually.
 
 * slices - this shows how effective pointers are since a slice has a pointer to a backing array. Building on comments
-  from the previous lesson, I believe the golang implementation of a string is a slice with a pointer to a char array.
+  from the previous lesson, I believe the golang implementation of a string is a slice with a pointer to a byte array.
   The sample code creates an array of ints using literals. Then the slice to the int array is created. The slice
   has the pointer. I would think if a function needs an array as a parameter, you want to use a slice for that because
   that is the best optimization of the function call stack.
 
 * slices (of slice) - and since a slice has a pointer to a backing array, the array type can be anything including a
   slice which, again, has a backing array pointer. Similar to pointer of pointers in C. There is a lot going on in the
-  sample even though much is hidden in the language. Each literal string is a slice to a char array. So the memory for
-  the char array slices (strings) have to be created first. Then each string array is created followed by a slice
-  for each string array. 9 char arrays, 9 slices to char arrays (strings), 3 string arrays, 3 slices to string
+  sample even though much is hidden in the language. Each literal string is a slice to a byte array. So the memory for
+  the byte array slices (strings) have to be created first. Then each string array is created followed by a slice
+  for each string array. 9 byte arrays, 9 slices to byte arrays (strings), 3 string arrays, 3 slices to string
   arrays. So far. Then the array of string slices is created followed by the slice for that array. And for
   the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
   code.
