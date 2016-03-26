@@ -319,3 +319,6 @@ Lessons
   and receiving ints on the "quit" channel. When one "quit" int is received, fibonacci() ends which also
   ends main(). The Go routine receives 10 ints from the main processing channel and sends one int on the
   "quit" channel.
+
+* channels (selectdef) - just showing that a default can be used in a select. This will activate when all
+  channel operations on the select are blocked.
