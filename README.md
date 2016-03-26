@@ -322,3 +322,6 @@ Lessons
 
 * channels (selectdef) - just showing that a default can be used in a select. This will activate when all
   channel operations on the select are blocked.
+
+* EXERCISE (concur) - main exercise for the Concurrency section of the tour. Maybe not the best code, but
+  it was easy to implement and satisfies requirements.
