@@ -290,3 +290,12 @@ Lessons
 
 * goroutines - introduction to Go routines. Each routine is a lightweight thread accessing resources potentially
   shared by other routines.
+
+* channels - these are like Java streams. You send and receive values with the operator, <-. You have to use
+  make like with maps and slices. Sends and receives block until the other side is ready, and that makes it very
+  useful for routine synchronization without explicit locks. So the sample distributes work among 2 routines.
+  When each routine is done, it sends an int on a channel. Both x and y ints are waiting to receive from the
+  channel. 2 senders, 2 receivers - remember the blocking. So I start 2 threads to do work and then I wait in the
+  caller until both threads are done. AND I have to receive results from both threads. Do the same in Java
+  and compare the code :).
+  
