@@ -1,0 +1,10 @@
+{
+	"image": "kengibson1111/godev",
+	"containerEnv": {
+		"GIT_SSH_COMMAND": "ssh -i ~/.ssh/id_rsa_tour-of-go"
+	},
+	"mounts": [
+		"source=${localEnv:USERPROFILE}/docker-user-home,target=/root,type=bind,consistency=cached",
+		"source=${localEnv:USERPROFILE}/myprojects,target=/var/local/myprojects,type=bind,consistency=cached"
+	]
+}

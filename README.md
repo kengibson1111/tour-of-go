@@ -1,9 +1,8 @@
-# tour-of-go
+# tour-of-go ![tour-of-go](/images-repo/icons8-golang-240.png)
 
-golang.org offers a Tour of Go. I took the tour on my laptop. Not the cleanest exercise
-code, but I was just trying to satisfy the exercise requirements.
+This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^1] Definitely use the code window on the tour. This repo contains mostly code from the tour, and at times I add more code based on ideas from the lessons. Code from the welcome pages is not included.
 
-##Lessons
+## Lessons
 
 * packages - illustrates a factored import and how exported functions from packages have
   to be capitalized. First look at Println. mains run from package main.
@@ -335,7 +334,10 @@ code, but I was just trying to satisfy the exercise requirements.
 
 * EXERCISE (mutex) - last exercise building on previous lesson.
 
-##Summary
+## Summary
 
-Pretty fun to do. Most of the code is supplied in the Tour. Hopefully it will help others get off the ground
-and start exploring golang.
+The tour is pretty fun. Hopefully it will help others get off the ground and start exploring Go.
+
+***
+
+[^1]: Icon provided by [Icons8](https://icons8.com/).
