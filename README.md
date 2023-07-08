@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* imports - emphasizes factored import. First look at formatted printing.
-
 * exports - shows how you can only access exported functions in a package. The exercise
   starts with an attempt to use math.pi instead of math.Pi.
 

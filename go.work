@@ -1,3 +1,6 @@
 go 1.20
 
-use ./basics/tourofgo-basics-packages
+use (
+	./basics/tourofgo-basics-imports
+	./basics/tourofgo-basics-packages
+)
