@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* functions - shows the use of a private function.
-
 * functions (params) - same as the previous lesson, but shows type sharing.
 
 * functions (multiple) - this shows how a function can return any number of values.
