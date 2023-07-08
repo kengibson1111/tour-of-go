@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* exports - shows how you can only access exported functions in a package. The exercise
-  starts with an attempt to use math.pi instead of math.Pi.
-
 * functions - shows the use of a private function.
 
 * functions (params) - same as the previous lesson, but shows type sharing.
