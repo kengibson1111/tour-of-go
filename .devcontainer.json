@@ -6,5 +6,40 @@
 	"mounts": [
 		"source=${localEnv:USERPROFILE}/docker-user-home,target=/root,type=bind,consistency=cached",
 		"source=${localEnv:USERPROFILE}/myprojects,target=/var/local/myprojects,type=bind,consistency=cached"
-	]
+	],
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"go.toolsManagement.checkForUpdates": "local",
+				"go.gopath": "/var/local/myprojects/golang",
+				"go.goroot": "/usr/bin/go",
+				"go.buildTags": "",
+                "go.useLanguageServer": true,
+                "go.testFlags": [
+                    "-v",
+                    "-race"
+                ],
+                "go.testTimeout": "10s",
+                "go.coverOnSingleTest": true,
+                "go.coverOnSingleTestFile": true,
+                "go.coverOnTestPackage": true,
+                "go.lintTool": "golangci-lint",
+                "go.lintOnSave": "package",
+                "[go]": {
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    }
+                },
+                "gopls": {
+                    "usePlaceholders": false,
+                    "staticcheck": true,
+                    "vulncheck": "Imports"
+                }
+			},
+			"extensions": [
+				"golang.go"
+			]
+		}
+	}
 }
