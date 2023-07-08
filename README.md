@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* packages - illustrates a factored import and how exported functions from packages have
-  to be capitalized. First look at Println. mains run from package main.
-
 * imports - emphasizes factored import. First look at formatted printing.
 
 * exports - shows how you can only access exported functions in a package. The exercise
