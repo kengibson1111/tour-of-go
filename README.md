@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* functions (named) - return values can be named in the function declaration. Then the
-  return values can be referenced and assigned in the function. Pretty cool.
-
 * variables - this shows variable declarations at a package and function scope.
 
 * variables (init) - demonstrates initializers with variable declarations. The declaration at
