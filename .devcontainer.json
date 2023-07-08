@@ -12,30 +12,33 @@
 		"vscode": {
 			"settings": {
 				"go.toolsManagement.checkForUpdates": "local",
+                "go.useLanguageServer": true,
 				"go.gopath": "/var/local/myprojects/golang",
 				"go.goroot": "/usr/bin/go",
-				"go.buildTags": "",
-                "go.useLanguageServer": true,
-                "go.testFlags": [
-                    "-v",
-                    "-race"
-                ],
-                "go.testTimeout": "10s",
-                "go.coverOnSingleTest": true,
-                "go.coverOnSingleTestFile": true,
-                "go.coverOnTestPackage": true,
-                "go.lintTool": "golangci-lint",
+
+				"go.lintTool": "golangci-lint",
                 "go.lintOnSave": "package",
                 "[go]": {
                     "editor.codeActionsOnSave": {
                         "source.organizeImports": true
                     }
                 },
-                "gopls": {
+				"go.buildTags": "",
+
+				"gopls": {
                     "usePlaceholders": false,
                     "staticcheck": true,
                     "vulncheck": "Imports"
-                }
+                },
+
+				"go.testTimeout": "30s",
+                "go.coverOnSingleTest": true,
+                "go.coverOnSingleTestFile": true,
+                "go.coverOnTestPackage": true,
+                "go.testFlags": [
+                    "-v",
+                    "-race"
+                ]
 			},
 			"extensions": [
 				"golang.go"
