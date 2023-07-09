@@ -4,6 +4,7 @@ use (
 	./basics/tourofgo-basics-constants
 	./basics/tourofgo-basics-constantsnumeric
 	./basics/tourofgo-basics-exports
+	./basics/tourofgo-basics-forloop
 	./basics/tourofgo-basics-functions
 	./basics/tourofgo-basics-functionsmultiple
 	./basics/tourofgo-basics-functionsnamed

@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* forloop - basic for loop that looks like Java except for the variable short assignment :=.
-
 * forloop (while) - because init and post statements are optional, this is how to make a for loop
   act like a while.
 
