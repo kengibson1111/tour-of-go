@@ -10,6 +10,7 @@ use (
 	./basics/tourofgo-basics-packages
 	./basics/tourofgo-basics-types
 	./basics/tourofgo-basics-typesconversion
+	./basics/tourofgo-basics-typesinference
 	./basics/tourofgo-basics-variables
 	./basics/tourofgo-basics-variablesinit
 	./basics/tourofgo-basics-variablesshort

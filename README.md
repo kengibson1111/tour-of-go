@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* types (inference) - simple example showing type inference. Change the variable value and see
-  how the type changes.
-
 * constants - even though const has been seen before, this is the official lesson. Still not sure
   about package-level uppercase constants and variables being exported from the package.
 
