@@ -9,4 +9,5 @@ use (
 	./basics/tourofgo-basics-imports
 	./basics/tourofgo-basics-packages
 	./basics/tourofgo-basics-variables
+	./basics/tourofgo-basics-variablesinit
 )
