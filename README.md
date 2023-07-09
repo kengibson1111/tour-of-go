@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* zero - if a var is not initialized with a value, it is assigned zero. 0 for numerics, false
-  for bools, "" for strings.
-
 * types (conversion) - example showing the required explicit type conversion. If you remove
   the float64 or uint type conversion in the sample, you'll get a compile error.
 
