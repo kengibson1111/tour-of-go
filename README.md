@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* ifstmt - basics of the if statement.
-
 * if (short) - the if statement can have a "short assignment" init before the condition. Like a for loop
   without a post statement.
 
