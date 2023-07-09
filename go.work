@@ -10,4 +10,5 @@ use (
 	./basics/tourofgo-basics-packages
 	./basics/tourofgo-basics-variables
 	./basics/tourofgo-basics-variablesinit
+	./basics/tourofgo-basics-variablesshort
 )

@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* variables (short) - introduces the short assignment (:=) instead of a variable declaration
-  with an initializer omitting the type. For variables, this is only allowed at the function
-  scope.
-
 * types (basic) - this shows commonly used types. A factored var is used. First use of const
   with type inference. Notice const does not use short assignment like a variable. = instead
   of :=. Although not stated yet in the lessons, uppercase constants and variables at package
