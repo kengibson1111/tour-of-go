@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* types (basic) - this shows commonly used types. A factored var statement is used. Although not stated yet in the lessons, uppercase variables at a package
-  scope could be exported from a package just like a function. Uppercase and lowercase variables at a function scope are always private and cannot be exported.
-
 * zero - if a var is not initialized with a value, it is assigned zero. 0 for numerics, false
   for bools, "" for strings.
 
