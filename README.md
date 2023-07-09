@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* constants - even though const has been seen before, this is the official lesson. Still not sure
-  about package-level uppercase constants and variables being exported from the package.
-
 * constants (numeric) - uses a factored const. Shows bit shifting and type inference, but the type
   conversion is inconsistent. Just looking at the code, I would assume Big is a float. And because
   Small uses Big in its assignment, I would also assume Small is a float. In the types (conversion)

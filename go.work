@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./basics/tourofgo-basics-constants
 	./basics/tourofgo-basics-exports
 	./basics/tourofgo-basics-functions
 	./basics/tourofgo-basics-functionsmultiple
