@@ -8,4 +8,5 @@ use (
 	./basics/tourofgo-basics-functionsparams
 	./basics/tourofgo-basics-imports
 	./basics/tourofgo-basics-packages
+	./basics/tourofgo-basics-variables
 )

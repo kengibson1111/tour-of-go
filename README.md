@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* variables - this shows variable declarations at a package and function scope.
-
 * variables (init) - demonstrates initializers with variable declarations. The declaration at
   the function scope omits the type. And in that case, the variable infers the type of the
   initializer.
