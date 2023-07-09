@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* constants (numeric) - uses a factored const. Shows bit shifting and type inference, but the type
-  conversion is inconsistent. Just looking at the code, I would assume Big is a float. And because
-  Small uses Big in its assignment, I would also assume Small is a float. In the types (conversion)
-  lesson, the conversion between types had to be explicit. In this lesson, Small is converted to an
-  int and I don't get compile or runtime errors.
-
 * forloop - basic for loop that looks like Java except for the variable short assignment :=.
 
 * forloop (while) - because init and post statements are optional, this is how to make a for loop
