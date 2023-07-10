@@ -12,6 +12,7 @@ use (
 	./basics/tourofgo-basics-functionsnamed
 	./basics/tourofgo-basics-functionsparams
 	./basics/tourofgo-basics-if
+	./basics/tourofgo-basics-ifshort
 	./basics/tourofgo-basics-imports
 	./basics/tourofgo-basics-packages
 	./basics/tourofgo-basics-types
