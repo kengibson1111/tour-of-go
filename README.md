@@ -4,11 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* pointers - oh yeah, golang has pointers. This is where I think golang starts to kick ass in the runtime. The
-  pointers are not quite like C pointers because there is no arithmetic. But the efficiencies are there, and
-  pointer arithmetic can venture into illegal process memory space anyway :). Function call stacks can be really
-  tight like in C. This lesson is focusing only on a pointer to a primitive type.
-
 * structs - and the fun continues. objects? Uh, no. And there is a way to define and export a "method" meant
   specifically for a struct, but that's later. Functions, pointers, structs - back to the future. For this lesson
   I would assume that the struct instance is being created on the stack (not heap). Whether or not
