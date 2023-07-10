@@ -3,6 +3,7 @@ go 1.20
 use (
 	./basics/tourofgo-basics-constants
 	./basics/tourofgo-basics-constantsnumeric
+	./basics/tourofgo-basics-exerloops
 	./basics/tourofgo-basics-exports
 	./basics/tourofgo-basics-forever
 	./basics/tourofgo-basics-forloop
