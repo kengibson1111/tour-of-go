@@ -17,12 +17,12 @@ use (
 	./basics/tourofgo-basics-variablesinit
 	./basics/tourofgo-basics-variablesshort
 	./basics/tourofgo-basics-zero
-	./basics/tourofgo-flowcontrol-exerloops
-	./basics/tourofgo-flowcontrol-forever
-	./basics/tourofgo-flowcontrol-forloop
-	./basics/tourofgo-flowcontrol-forloopwhile
-	./basics/tourofgo-flowcontrol-if
-	./basics/tourofgo-flowcontrol-ifelse
-	./basics/tourofgo-flowcontrol-ifshort
-	./basics/tourofgo-flowcontrol-whileloop
+	./flowcontrol/tourofgo-flowcontrol-exerloops
+	./flowcontrol/tourofgo-flowcontrol-forever
+	./flowcontrol/tourofgo-flowcontrol-forloop
+	./flowcontrol/tourofgo-flowcontrol-forloopwhile
+	./flowcontrol/tourofgo-flowcontrol-if
+	./flowcontrol/tourofgo-flowcontrol-ifelse
+	./flowcontrol/tourofgo-flowcontrol-ifshort
+	./flowcontrol/tourofgo-flowcontrol-whileloop
 )
