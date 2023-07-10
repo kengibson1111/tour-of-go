@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* structs (literals) - a few examples of creating a struct instance using literals. In the pointer case, the
-  struct instance is created first and then the pointer is assigned. And I would assume for the Println
-  call at runtime, 3 struct instances are being copied from the stack to the function call stack and 1 pointer
-  value is being copied from the stack to the function call stack. Doesn't seem like a big deal when
-  a struct is so small, but it could be a big deal with more complex structs.
-
 * arrays - simple example creating an array on the stack. arrays have a hard limit - you specify the length
   and the array is only that length. And the length is embedded in the type, so [4]int and [5]int are actually
   different types. Arrays are values, not pointers. Thoughts on the golang string implementation: just an
