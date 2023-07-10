@@ -24,5 +24,6 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-if
 	./flowcontrol/tourofgo-flowcontrol-ifelse
 	./flowcontrol/tourofgo-flowcontrol-ifshort
+	./flowcontrol/tourofgo-flowcontrol-switch
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 )

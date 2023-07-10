@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* switch - basic switch statement.
-
 * switch (order) - this emphasizes switch statement order and the built-in case break when a statement
   evaluates to true. In Java, you can stack case statements - not so with golang.
 
