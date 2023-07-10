@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* if (else) - adding the else to the previous sample.
-
 * EXERCISE (loops) - not the cleanest code, but it did meet the exercise requirements.
 
 * switch - basic switch statement.
