@@ -3,18 +3,11 @@ go 1.20
 use (
 	./basics/tourofgo-basics-constants
 	./basics/tourofgo-basics-constantsnumeric
-	./basics/tourofgo-basics-exerloops
 	./basics/tourofgo-basics-exports
-	./basics/tourofgo-basics-forever
-	./basics/tourofgo-basics-forloop
-	./basics/tourofgo-basics-forloopwhile
 	./basics/tourofgo-basics-functions
 	./basics/tourofgo-basics-functionsmultiple
 	./basics/tourofgo-basics-functionsnamed
 	./basics/tourofgo-basics-functionsparams
-	./basics/tourofgo-basics-if
-	./basics/tourofgo-basics-ifelse
-	./basics/tourofgo-basics-ifshort
 	./basics/tourofgo-basics-imports
 	./basics/tourofgo-basics-packages
 	./basics/tourofgo-basics-types
@@ -23,6 +16,13 @@ use (
 	./basics/tourofgo-basics-variables
 	./basics/tourofgo-basics-variablesinit
 	./basics/tourofgo-basics-variablesshort
-	./basics/tourofgo-basics-whileloop
 	./basics/tourofgo-basics-zero
+	./basics/tourofgo-flowcontrol-exerloops
+	./basics/tourofgo-flowcontrol-forever
+	./basics/tourofgo-flowcontrol-forloop
+	./basics/tourofgo-flowcontrol-forloopwhile
+	./basics/tourofgo-flowcontrol-if
+	./basics/tourofgo-flowcontrol-ifelse
+	./basics/tourofgo-flowcontrol-ifshort
+	./basics/tourofgo-flowcontrol-whileloop
 )
