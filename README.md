@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* slices - this shows how effective pointers are since a slice has a pointer to a backing array. Building on comments
-  from the previous lesson, I believe the golang implementation of a string is a slice with a pointer to a byte array.
-  The sample code creates an array of ints using literals. Then the slice to the int array is created. The slice
-  has the pointer. I would think if a function needs an array as a parameter, you want to use a slice for that because
-  that is the best optimization of the function call stack.
-
 * slices (of slice) - and since a slice has a pointer to a backing array, the array type can be anything including a
   slice which, again, has a backing array pointer. Similar to pointer of pointers in C. There is a lot going on in the
   sample even though much is hidden in the language. Each literal string is a slice to a byte array. So the memory for
