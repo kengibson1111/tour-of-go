@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* defer (stack) - this shows that deferred code has to play by call stack rules. Makes sense.
-
 * pointers - oh yeah, golang has pointers. This is where I think golang starts to kick ass in the runtime. The
   pointers are not quite like C pointers because there is no arithmetic. But the efficiencies are there, and
   pointer arithmetic can venture into illegal process memory space anyway :). Function call stacks can be really
