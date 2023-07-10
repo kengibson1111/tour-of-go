@@ -4,17 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* arrays - simple example creating an array on the stack. arrays have a hard limit - you specify the length
-  and the array is only that length. And the length is embedded in the type, so [4]int and [5]int are actually
-  different types. Arrays are values, not pointers. Thoughts on the golang string implementation: just an
-  assumption, but it looks like a string is a pointer to a byte array. Memory for the byte array is not
-  initialized until the string is initialized with a value. Then when a string is initialized (like in the
-  sample code), byte array memory is allocated and set. So the sample code creates an array of 2 byte array
-  pointers on the stack. Then golang allocates memory for the byte arrays on the stack or heap depending on
-  the underlying implementation. This seems like a small point, but when you assign and reassign string (byte
-  array pointer) values this could be expensive for the runtime. golang hides all of the string complexity in
-  the language and runtime, but the complexity has to be addressed eventually.
-
 * slices - this shows how effective pointers are since a slice has a pointer to a backing array. Building on comments
   from the previous lesson, I believe the golang implementation of a string is a slice with a pointer to a byte array.
   The sample code creates an array of ints using literals. Then the slice to the int array is created. The slice
