@@ -4,11 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* pointers (structs) - this is showing that a pointer to a struct can be used to make changes in the struct
-  instance. C makes a field access distinction between a struct and a pointer. golang doesn't do that - dot
-  notation all the way. In this sample, it looks like a a struct instance is created on the stack and the
-  pointer value is stack address space.
-
 * structs (literals) - a few examples of creating a struct instance using literals. In the pointer case, the
   struct instance is created first and then the pointer is assigned. And I would assume for the Println
   call at runtime, 3 struct instances are being copied from the stack to the function call stack and 1 pointer

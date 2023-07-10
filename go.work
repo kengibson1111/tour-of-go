@@ -32,5 +32,6 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./moretypes/tourofgo-moretypes-pointers
 	./moretypes/tourofgo-moretypes-structfields
+	./moretypes/tourofgo-moretypes-structpointers
 	./moretypes/tourofgo-moretypes-structs
 )
