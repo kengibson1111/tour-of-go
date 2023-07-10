@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* defer - you can defer code to run just after the function is popped off the call stack. Handy for resource
-  cleanup.
-
 * defer (stack) - this shows that deferred code has to play by call stack rules. Makes sense.
 
 * pointers - oh yeah, golang has pointers. This is where I think golang starts to kick ass in the runtime. The

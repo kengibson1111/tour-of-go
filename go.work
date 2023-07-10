@@ -17,6 +17,7 @@ use (
 	./basics/tourofgo-basics-variablesinit
 	./basics/tourofgo-basics-variablesshort
 	./basics/tourofgo-basics-zero
+	./flowcontrol/tourofgo-flowcontrol-defer
 	./flowcontrol/tourofgo-flowcontrol-exerloops
 	./flowcontrol/tourofgo-flowcontrol-forever
 	./flowcontrol/tourofgo-flowcontrol-forloop
