@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* structs - and the fun continues. objects? Uh, no. And there is a way to define and export a "method" meant
-  specifically for a struct, but that's later. Functions, pointers, structs - back to the future. For this lesson
-  I would assume that the struct instance is being created on the stack (not heap). Whether or not
-  fmt.Println copies the struct instance or just uses a pointer to the struct for the call stack is unknown
-  at this point.
-
 * structs (fields) - fields are accessed via dot notation.
 
 * pointers (structs) - this is showing that a pointer to a struct can be used to make changes in the struct

@@ -31,4 +31,5 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-switchorder
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./moretypes/tourofgo-moretypes-pointers
+	./moretypes/tourofgo-moretypes-structs
 )
