@@ -1,4 +1,4 @@
-# basics - for loop (infinite)
+# flowcontrol - for loop (infinite)
 
 This builds on **basics - while loop**. Omit the condition and you have the infinite for loop. CTRL-C to exit.
 

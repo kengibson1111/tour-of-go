@@ -1,4 +1,4 @@
-# basics - if (short statement)
+# flowcontrol - if (short statement)
 
 The `if` statement can have a "short assignment" init statement before the condition. Variable short assignment is covered in **basics - variables (short declarations)**. The variable being assigned is only in the `if` block's scope.
 

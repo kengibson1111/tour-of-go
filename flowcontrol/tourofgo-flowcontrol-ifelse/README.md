@@ -1,4 +1,4 @@
-# basics - if (else)
+# flowcontrol - if (else)
 
 This extends **basics - if (short)**. The variable that is short assigned in an `if` statement is scoped to the `if` block and the `else` block.
 
