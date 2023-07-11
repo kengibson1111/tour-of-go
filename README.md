@@ -24,9 +24,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
   is pointing at, there are only 3 elements left. The array length is part of the type and never grows. So
   slices seem to be a way to circumvent array limitations (which exist to provide runtime consistency).
 
-* slices (nil) - zero value for a slice is nil. length and capacity are both 0. I assume the pointer value is also
-  0.
-
 * slices (append) - this is another function that hides so much complexity around array storage. This shows how
   length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
   optimization reasons.
