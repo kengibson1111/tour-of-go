@@ -4,13 +4,19 @@ import "fmt"
 
 func main() {
 	s := []int{2, 3, 5, 7, 11, 13}
-	fmt.Println("s ==", s)
-	fmt.Println("s[1:4] ==", s[1:4])
+	fmt.Println(s, ", len = ", len(s), ", cap = ", cap(s))
 
-	// missing low index implies 0
-	fmt.Println("s[:3] ==", s[:3])
+	// reslice should be [3, 5, 7]. element for high-bound index (4) not included.
+	s = s[1:4]
+	fmt.Println(s, ", len = ", len(s), ", cap = ", cap(s))
 
-	// missing high index implies len(s)
-	fmt.Println("s[4:] ==", s[4:])
+	// reslice of the reslice should be [3, 5]. element for high-bound index (2) not included.
+	s = s[:2]
+	fmt.Println(s, ", len = ", len(s), ", cap = ", cap(s))
+
+	// reslice of the reslice of the reslice should be [5]. high-bound index default is reslice
+	// of the reslice length (2). element for high-bound index (2) not included because it does
+	// not exist.
+	s = s[1:]
+	fmt.Println(s, ", len = ", len(s), ", cap = ", cap(s))
 }
-

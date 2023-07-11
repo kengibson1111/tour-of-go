@@ -13,10 +13,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
   the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
   code.
 
-* slices (range) - when a slice subset is specified using [], a new pointer to the same backing array is created. This
-  is where golang has made a slice more than just a pointer. Only the specified range is visible in the newly
-  created slice because the pointer, capacity, and length are unique to the newly created slice.
-
 * slices (make) - the introduction of make() which could be allocating on the stack or heap. The int
   array for a is created and the slice is pointing to the start of the backing array storage. The int array for b is
   created and the slice is pointing to the array storage for b. Two slice pointers, two separate int arrays. Then
