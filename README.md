@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* range (skip) - shows how to skip the index if you just want a range value and how to skip the value if
-  you just want the index.
-
 * EXERCISE (slices) - this was fun to do. After finishing and comparing with other answers across github,
   it isn't the best code, but it works.
 
