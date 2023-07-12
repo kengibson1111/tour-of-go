@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (slices) - this was fun to do. After finishing and comparing with other answers across github,
-  it isn't the best code, but it works.
-
 * maps - basic example of map use.
 
 * maps (literals) - literals can be used for maps - like structs.
