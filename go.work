@@ -33,6 +33,7 @@ use (
 	./moretypes/tourofgo-moretypes-arrays
 	./moretypes/tourofgo-moretypes-pointers
 	./moretypes/tourofgo-moretypes-slices
+	./moretypes/tourofgo-moretypes-slicesappend
 	./moretypes/tourofgo-moretypes-slicesdefault
 	./moretypes/tourofgo-moretypes-sliceslencap
 	./moretypes/tourofgo-moretypes-slicesliteral

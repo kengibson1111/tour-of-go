@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* slices (append) - this is another function that hides so much complexity around array storage. This shows how
-  length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
-  optimization reasons.
-
 * range - the range keyword can be used for slices and maps. 2 return values - the index and the value.
 
 * range (skip) - shows how to skip the index if you just want a range value and how to skip the value if
