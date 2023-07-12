@@ -38,6 +38,7 @@ use (
 	./moretypes/tourofgo-moretypes-slicesliteral
 	./moretypes/tourofgo-moretypes-slicesmake
 	./moretypes/tourofgo-moretypes-slicesnil
+	./moretypes/tourofgo-moretypes-slicesofslice
 	./moretypes/tourofgo-moretypes-slicesreference
 	./moretypes/tourofgo-moretypes-structfields
 	./moretypes/tourofgo-moretypes-structliterals

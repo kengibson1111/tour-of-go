@@ -4,15 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* slices (of slice) - and since a slice has a pointer to a backing array, the array type can be anything including a
-  slice which, again, has a backing array pointer. Similar to pointer of pointers in C. There is a lot going on in the
-  sample even though much is hidden in the language. Each literal string is a slice to a byte array. So the memory for
-  the byte array slices (strings) have to be created first. Then each string array is created followed by a slice
-  for each string array. 9 byte arrays, 9 slices to byte arrays (strings), 3 string arrays, 3 slices to string
-  arrays. So far. Then the array of string slices is created followed by the slice for that array. And for
-  the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
-  code.
-
 * slices (append) - this is another function that hides so much complexity around array storage. This shows how
   length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
   optimization reasons.
