@@ -1,0 +1,15 @@
+# moretypes - slices (make)
+
+This code is slightly different than the tour's code. Hopefully the code changes will help describe slices in a little more detail.
+
+This sample introduces make() which allocates the array on the heap, and I am assuming the slice struct is also on the heap. The int array for slice a is created first and the slice's array pointer is pointing to the start of the new array. Slice a's low-bound index is zero, and it's length is the array length.
+
+Slice b is a new slice pointing to a subset of slice a's array. The array pointer values for slices a and b are the same, but slice b is not referencing any elements, because the slice expression's low-bound index and high-bound index are the same. This results in a length of zero. The capacity is 5 (array length minus slice b's low-bound index of zero). When printing slice b, the elements for the underlying array will not be printed, but they are definitely intact in heap memory.
+
+Slice c is a new slice pointing to a subset of slice a's array. The array pointer values for slices a and c are the same, but slice c is only referencing the second and third elements. The array element for the slice expression's high-bound index is not included in the slice. The length is 2. The capacity is 4 (array length minus slice c's low-bound index of 1). When printing slice c, the last two elements for the underlying array will not be printed, but they are definitely intact in heap memory. Also, at this point, there are three slices with the same array pointer.
+
+Slice d is created to start at the 3rd element of slice c. This is where it gets fun. Based on the length of slice c, we shouldn't be able to get to the 3rd element of slice c, right? But we can because slice c has access to 4 elements of the underlying int array - indexes 1 - 4. This is because slice c's low-bound index is 1. Although slice c's length is only two, another slice can be created from slice c that disregards slice c's limited length, but it cannot disregard slice c's capacity. For slice d, try changing the slice expression's high-bound index from 4 to 5 and see what happens.
+
+After slice d is created, there are four slices with the same array pointer. All four have the ability to change array element values. I can see an advantage using slices with parallel processing as long as each slice's low-bound index is unique and each slice's length doesn't lead to overlapping another slice's low-bound index.
+
+For example, I could make a slice named "base" that has 12 elements in the underlying array. Then I could create 4 "processing" slices from the "base" slice - all with a length of 3. The 4 slice expressions would be base[0:3], base[3:6], base[6:9], base[9:12]. I should be able to safely spawn 4 threads - each thread using one of the "processing" slices. As long as each thread does not create more slices that go beyond the "processing" slice's length (like slice d above), each thread will not step on work done by other threads.

@@ -13,17 +13,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
   the underlying slice implementation, still not sure if the memory is on the stack or heap based on the sample
   code.
 
-* slices (make) - the introduction of make() which could be allocating on the stack or heap. The int
-  array for a is created and the slice is pointing to the start of the backing array storage. The int array for b is
-  created and the slice is pointing to the array storage for b. Two slice pointers, two separate int arrays. Then
-  c is a new slice pointing to a subset of b's array storage. The pointer values for b and c are the same, but c
-  is only referencing the first two elements. So the length is 2, but the capacity is still 5 because c is pointing
-  at the same element as b. Then d is created to start at the 3rd element of whatever c is pointing at (happens
-  to be the same that b is pointing at). Also d could have been defined as c[2:] and the result would be the same
-  because the array storage for b is only 5 ints. The capacity for d has to be 3 because from the element that d
-  is pointing at, there are only 3 elements left. The array length is part of the type and never grows. So
-  slices seem to be a way to circumvent array limitations (which exist to provide runtime consistency).
-
 * slices (append) - this is another function that hides so much complexity around array storage. This shows how
   length and capacity change as the slice grows. Not sure if there is a function to shrink array storage for
   optimization reasons.

@@ -36,6 +36,7 @@ use (
 	./moretypes/tourofgo-moretypes-slicesdefault
 	./moretypes/tourofgo-moretypes-sliceslencap
 	./moretypes/tourofgo-moretypes-slicesliteral
+	./moretypes/tourofgo-moretypes-slicesmake
 	./moretypes/tourofgo-moretypes-slicesnil
 	./moretypes/tourofgo-moretypes-slicesreference
 	./moretypes/tourofgo-moretypes-structfields
