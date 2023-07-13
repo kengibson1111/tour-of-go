@@ -32,6 +32,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./methods/tourofgo-methods-methods
 	./methods/tourofgo-methods-methodsfunc
+	./methods/tourofgo-methods-methodsnonstruct
 	./moretypes/tourofgo-moretypes-arrays
 	./moretypes/tourofgo-moretypes-exerfunctions
 	./moretypes/tourofgo-moretypes-exermaps
