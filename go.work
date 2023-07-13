@@ -31,6 +31,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-switchorder
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./moretypes/tourofgo-moretypes-arrays
+	./moretypes/tourofgo-moretypes-exermaps
 	./moretypes/tourofgo-moretypes-exerslices
 	./moretypes/tourofgo-moretypes-maps
 	./moretypes/tourofgo-moretypes-mapsliteral

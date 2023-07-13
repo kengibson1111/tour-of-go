@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (maps) - maybe not the best, but it was quick :).
-
 * functions (value) - yes, functions are 1st class citizens in golang. And when that happens, the possibilities
   are almost endless. In the sample, compute() has a function parameter. All compute() knows is that the
   function will accept 2 values and compute() will pass 3 and 4 as the values to the function parameter. Now
