@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* maps (literals inference) - same as last example, but demonstrating type inference in the literal.
-
 * maps (mutate) - basic CRUD for a map.
 
 * EXERCISE (maps) - maybe not the best, but it was quick :).

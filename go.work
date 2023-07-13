@@ -34,6 +34,7 @@ use (
 	./moretypes/tourofgo-moretypes-exerslices
 	./moretypes/tourofgo-moretypes-maps
 	./moretypes/tourofgo-moretypes-mapsliteral
+	./moretypes/tourofgo-moretypes-mapsliteralinference
 	./moretypes/tourofgo-moretypes-pointers
 	./moretypes/tourofgo-moretypes-range
 	./moretypes/tourofgo-moretypes-rangeskip
