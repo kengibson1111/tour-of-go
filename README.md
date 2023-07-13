@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* functions (closure) - closures are cool. They can reference variables outside of their local function scope.
-  So in the sample, adder() is returning a closure that can mutate its own sum variable. Seems like a potential
-  implementation for basic map reductions.
-
 * EXERCISE (functions) - not an optimized implementation, but I wanted to do something with slices.
 
 * methods - golang does not have objects, but it does have types. Types can be associated with primitives, structs,
