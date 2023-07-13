@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* methods (func) - this is just emphasizing that methods are functions. The sample code is the same as the previous
-  lesson without the type receiver argument.
-
 * methods (nonstruct) - this is showing a few things. Types don't necessarily have to be defined for structs. The
   sample code defines a type for a primitive. Why? For this sample, it is a way to overload functionality in a float64.
   Define a type and then define a method for the type. Methods can only be defined for types in the same package, and
