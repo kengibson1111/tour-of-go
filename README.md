@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* maps (mutate) - basic CRUD for a map.
-
 * EXERCISE (maps) - maybe not the best, but it was quick :).
 
 * functions (value) - yes, functions are 1st class citizens in golang. And when that happens, the possibilities
