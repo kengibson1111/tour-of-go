@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* functions (pointers) - just to drive home the concept, methods are functions. So the same arguments apply to passing
-  a value of a type instance to prevent updates and a pointer of the type instance to allow updates. In the last
-  lesson, you changed the pointer receiver to a value receiver. In this sample, change the *Vertex to Vertex in Scale()
-  and you should see a compile error. Fix it and try again. This is one area where methods may have an advantage over
-  simple functions.
-
 * methods (pointersind) - emphasizing the indirection flexibility with methods. Functions that have a pointer
   parameter must take a pointer. Methods that have a pointer receiver can take a value or a pointer. golang figures
   it out.
