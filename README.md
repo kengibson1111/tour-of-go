@@ -4,12 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* methods (pointers) - if you want to modify a type instance, the receiver for the method has to be a pointer to
-  the type. So anything that reads from a type instance could have just a value receiver. The only argument
-  against that is function call stack efficiency since having a value receiver means the entire type instance VALUE
-  will be copied to the call stack for the method. In the sample code, change the pointer receiver to a value receiver and
-  see what happens. SIDE NOTE: notice that dot notation is used to access methods with both types of receivers.
-
 * functions (pointers) - just to drive home the concept, methods are functions. So the same arguments apply to passing
   a value of a type instance to prevent updates and a pointer of the type instance to allow updates. In the last
   lesson, you changed the pointer receiver to a value receiver. In this sample, change the *Vertex to Vertex in Scale()

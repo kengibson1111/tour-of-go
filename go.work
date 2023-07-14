@@ -33,6 +33,7 @@ use (
 	./methods/tourofgo-methods-methods
 	./methods/tourofgo-methods-methodsfunc
 	./methods/tourofgo-methods-methodsnonstruct
+	./methods/tourofgo-methods-methodspointers
 	./moretypes/tourofgo-moretypes-arrays
 	./moretypes/tourofgo-moretypes-exerfunctions
 	./moretypes/tourofgo-moretypes-exermaps
