@@ -4,11 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* methods (receiver) - this verifies a golang "good practice" for receivers. For a given type, receivers for all
-  methods should be either value or pointer but not a mix of both. And as mentioned in the lesson "methods (pointers)"
-  you do get better function call stack performance using a pointer receiver for methods that only read if the
-  type is a large struct.
-
 * interfaces - introduction of an interface type which is the same as in Java - a set of method signatures.
 
 * interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
