@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* methods (pointersindrev) - and the indirection flexibility with methods is true in reverse, too. Functions
-  that have a value parameter must take a value. Methods that have a value receiver can take a pointer or value.
-  golang figures it out.
-
 * methods (receiver) - this verifies a golang "good practice" for receivers. For a given type, receivers for all
   methods should be either value or pointer but not a mix of both. And as mentioned in the lesson "methods (pointers)"
   you do get better function call stack performance using a pointer receiver for methods that only read if the
