@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* goroutines - introduction to Go routines. Each routine is a lightweight thread accessing resources potentially
-  shared by other routines.
-
 * channels - these are like Java streams. You send and receive values with the operator, <-. You have to use
   make() like with maps and slices. Sends and receives block until the other side is ready, and that makes it very
   useful for routine synchronization without explicit locks. So the sample distributes work among 2 routines.
