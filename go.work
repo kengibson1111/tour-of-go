@@ -32,6 +32,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./methods/tourofgo-methods-errors
 	./methods/tourofgo-methods-exererrors
+	./methods/tourofgo-methods-exerimages
 	./methods/tourofgo-methods-exerreaders
 	./methods/tourofgo-methods-exerreadersrot13
 	./methods/tourofgo-methods-exerstringers
