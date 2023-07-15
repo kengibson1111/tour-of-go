@@ -29,6 +29,7 @@ func (f F) M() {
 
 func main() {
 	var i I
+	describe(i)
 
 	i = &T{"Hello"}
 	describe(i)
@@ -38,4 +39,3 @@ func main() {
 	describe(i)
 	i.M()
 }
-

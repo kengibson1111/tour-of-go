@@ -4,11 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (value) - when an interface is declared, it has a nil value and type. It is considered a nil
-  interface. The compiler checks to make sure each interface binding is legal. At runtime, the interface
-  value and type are filled when the interface is assigned. Then one of the method signatures can be called
-  exercising behavior based on the interface's value and type.
-
 * interfaces (nilvalues) - this is where it starts getting interesting. In the previous lesson, suppose t was nil
   when i was assigned. In Java, that would mean a null interface and a potential null pointer exception. In golang,
   the interface is not nil after assignment. It has a nil concrete value and type before assignment and is a nil
