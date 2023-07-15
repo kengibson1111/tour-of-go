@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (errors) - implemented based on the instructions. The error type does not have to be a struct. In
-  this case, it is a float64. Similar to the previous lesson trying to emphasize golang best practices around
-  error generation and handling.
-
 * readers - the io.Reader interface has many implementations offered from golang. In this sample, there was no
   need to build an implementation.
 
