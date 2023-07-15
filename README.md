@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (readers) - a Reader implementation was the exercise.
-
 * EXERCISE (readersrot13) - another Reader implementation - pretty fun to figure out. Maybe not the most efficient
   code, but a quick implementation.
 
