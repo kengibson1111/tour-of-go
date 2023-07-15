@@ -36,6 +36,7 @@ use (
 	./methods/tourofgo-methods-exerreadersrot13
 	./methods/tourofgo-methods-exerstringers
 	./methods/tourofgo-methods-functionspointers
+	./methods/tourofgo-methods-images
 	./methods/tourofgo-methods-interfaces
 	./methods/tourofgo-methods-interfacesassert
 	./methods/tourofgo-methods-interfacesempty

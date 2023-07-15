@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* images - introduction to the Image interface.
-
 * EXERCISE (images) - even with an empty struct as the type, the method implementations satisfy the exercise
   requirements. If you want to see the resulting image, the code has to be run in the browser version of
   the Tour of Go.
