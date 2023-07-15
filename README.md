@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
-  method signature and it implicitly implements the interface.
-
 * interfaces (value) - when an interface is declared, it has a nil value and type. It is considered a nil
   interface. The compiler checks to make sure each interface binding is legal. At runtime, the interface
   value and type are filled when the interface is assigned. Then one of the method signatures can be called

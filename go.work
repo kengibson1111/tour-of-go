@@ -32,6 +32,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./methods/tourofgo-methods-functionspointers
 	./methods/tourofgo-methods-interfaces
+	./methods/tourofgo-methods-interfacesimpl
 	./methods/tourofgo-methods-methods
 	./methods/tourofgo-methods-methodsfunc
 	./methods/tourofgo-methods-methodsnonstruct
