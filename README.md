@@ -4,14 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* channels - these are like Java streams. You send and receive values with the operator, <-. You have to use
-  make() like with maps and slices. Sends and receives block until the other side is ready, and that makes it very
-  useful for routine synchronization without explicit locks. So the sample distributes work among 2 routines.
-  When each routine is done, it sends an int on a channel. Both x and y ints are waiting to receive from the
-  channel. 2 senders, 2 receivers - remember the blocking. So I start 2 threads to do work and then I wait in the
-  caller until both threads are done. AND I have to receive results from both threads. Do the same in Java
-  and compare the code :).
-
 * channels (buf) - you can pass in a 2nd argument to make() which specifies a buffer length. When you do this,
   golang uses a buffer with the channel. Sends block until the buffer is full. Receives block if the buffer
   is empty. So try a couple of code mods and see what happens. First, try sending a 3rd int on the channel before
