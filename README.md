@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (readersrot13) - another Reader implementation - pretty fun to figure out. Maybe not the most efficient
-  code, but a quick implementation.
-
 * images - introduction to the Image interface.
 
 * EXERCISE (images) - even with an empty struct as the type, the method implementations satisfy the exercise
