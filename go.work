@@ -19,6 +19,7 @@ use (
 	./basics/tourofgo-basics-zero
 	./concurrency/tourofgo-concurrency-channels
 	./concurrency/tourofgo-concurrency-channelsbuf
+	./concurrency/tourofgo-concurrency-channelsclose
 	./concurrency/tourofgo-concurrency-goroutines
 	./flowcontrol/tourofgo-flowcontrol-defer
 	./flowcontrol/tourofgo-flowcontrol-deferstack
