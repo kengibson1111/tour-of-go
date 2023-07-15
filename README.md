@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* stringer - Stringer is an interface from the core package fmt. The String() method signature is like the Java
-  toString().
-
 * EXERCISE (stringers) - pretty straightforward.
 
 * errors - another interface from the core package fmt is error. Many golang functions and methods return an

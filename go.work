@@ -46,6 +46,7 @@ use (
 	./methods/tourofgo-methods-methodspointersind
 	./methods/tourofgo-methods-methodspointersindrev
 	./methods/tourofgo-methods-methodsreceiver
+	./methods/tourofgo-methods-stringer
 	./moretypes/tourofgo-moretypes-arrays
 	./moretypes/tourofgo-moretypes-exerfunctions
 	./moretypes/tourofgo-moretypes-exermaps
