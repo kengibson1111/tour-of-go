@@ -30,6 +30,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-switchnocond
 	./flowcontrol/tourofgo-flowcontrol-switchorder
 	./flowcontrol/tourofgo-flowcontrol-whileloop
+	./methods/tourofgo-methods-errors
 	./methods/tourofgo-methods-exerstringers
 	./methods/tourofgo-methods-functionspointers
 	./methods/tourofgo-methods-interfaces

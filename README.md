@@ -4,14 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* errors - another interface from the core package fmt is error. Many golang functions and methods return an
-  instance of an error implementation. Then the caller can check if the returned error is nil and react
-  appropriately. The sample code shows how to implement the error interface. In run(), MyError is created
-  and the pointer is returned which aligns with the pointer receiver of the Error() method defined in the
-  error interface. So the runtime knows MyError implements the error interface and binds it. Now MyError's
-  Error() method can be called through the error interface by any other function. In this case, Println
-  can call it.
-
 * EXERCISE (errors) - implemented based on the instructions. The error type does not have to be a struct. In
   this case, it is a float64. Similar to the previous lesson trying to emphasize golang best practices around
   error generation and handling.
