@@ -4,14 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* channels (buf) - you can pass in a 2nd argument to make() which specifies a buffer length. When you do this,
-  golang uses a buffer with the channel. Sends block until the buffer is full. Receives block if the buffer
-  is empty. So try a couple of code mods and see what happens. First, try sending a 3rd int on the channel before
-  the first Println(). Back to the original code (without the 3rd int send), try adding a 3rd Println(). The
-  advantage of a buffer is to allow heavy traffic even though a receiver might not be ready. Without a buffer,
-  the channel blocks on just a single send. With a buffer, sends can pile up in a buffer and receivers can pull
-  when they are ready.
-
 * channels (close) - back to the keyword range used in a loop. It works on a channel, but the channel has to
   be closed for the loop to end. Channels don't have to be closed unless a receiver needs to be told. And
   it is a good practice to only have a sender close a channel. Sending on a closed channel causes a runtime
