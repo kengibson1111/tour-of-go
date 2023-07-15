@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces - introduction of an interface type which is the same as in Java - a set of method signatures.
-
 * interfaces (impl) - golang does not require explicit interface declaration like in Java. Just implement the
   method signature and it implicitly implements the interface.
 
