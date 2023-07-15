@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (switch) - you can use a short assignment to a type assertion in a switch statement.
-
 * stringer - Stringer is an interface from the core package fmt. The String() method signature is like the Java
   toString().
 
