@@ -31,6 +31,7 @@ use (
 	./flowcontrol/tourofgo-flowcontrol-switchorder
 	./flowcontrol/tourofgo-flowcontrol-whileloop
 	./generics/tourofgo-generics-typeparams
+	./generics/tourofgo-generics-types
 	./methods/tourofgo-methods-errors
 	./methods/tourofgo-methods-exererrors
 	./methods/tourofgo-methods-exerimages
