@@ -1,12 +1,97 @@
 all: clean install
 
 clean:
-	go clean -i github.com/kengibson1111/tour-of-go/...
+	rm ${GOPATH}/bin/tourofgo*
 
 install:
-	go get -u golang.org/x/tour/pic
-	go get -u golang.org/x/tour/reader
-	go get -u golang.org/x/tour/tree
-	go get -u golang.org/x/tour/wc
-	go install ./...
-
+	go install ./basics/tourofgo-basics-constants
+	go install ./basics/tourofgo-basics-constantsnumeric
+	go install ./basics/tourofgo-basics-exports
+	go install ./basics/tourofgo-basics-functions
+	go install ./basics/tourofgo-basics-functionsmultiple
+	go install ./basics/tourofgo-basics-functionsnamed
+	go install ./basics/tourofgo-basics-functionsparams
+	go install ./basics/tourofgo-basics-imports
+	go install ./basics/tourofgo-basics-packages
+	go install ./basics/tourofgo-basics-types
+	go install ./basics/tourofgo-basics-typesconversion
+	go install ./basics/tourofgo-basics-typesinference
+	go install ./basics/tourofgo-basics-variables
+	go install ./basics/tourofgo-basics-variablesinit
+	go install ./basics/tourofgo-basics-variablesshort
+	go install ./basics/tourofgo-basics-zero
+	go install ./concurrency/tourofgo-concurrency-channels
+	go install ./concurrency/tourofgo-concurrency-channelsbuf
+	go install ./concurrency/tourofgo-concurrency-channelsclose
+	go install ./concurrency/tourofgo-concurrency-channelsselect
+	go install ./concurrency/tourofgo-concurrency-channelsselectdef
+	go install ./concurrency/tourofgo-concurrency-exerconcur
+	go install ./concurrency/tourofgo-concurrency-exermutex
+	go install ./concurrency/tourofgo-concurrency-goroutines
+	go install ./concurrency/tourofgo-concurrency-mutex
+	go install ./flowcontrol/tourofgo-flowcontrol-defer
+	go install ./flowcontrol/tourofgo-flowcontrol-deferstack
+	go install ./flowcontrol/tourofgo-flowcontrol-exerloops
+	go install ./flowcontrol/tourofgo-flowcontrol-forever
+	go install ./flowcontrol/tourofgo-flowcontrol-forloop
+	go install ./flowcontrol/tourofgo-flowcontrol-forloopwhile
+	go install ./flowcontrol/tourofgo-flowcontrol-if
+	go install ./flowcontrol/tourofgo-flowcontrol-ifelse
+	go install ./flowcontrol/tourofgo-flowcontrol-ifshort
+	go install ./flowcontrol/tourofgo-flowcontrol-switch
+	go install ./flowcontrol/tourofgo-flowcontrol-switchnocond
+	go install ./flowcontrol/tourofgo-flowcontrol-switchorder
+	go install ./flowcontrol/tourofgo-flowcontrol-whileloop
+	go install ./generics/tourofgo-generics-typeparams
+	go install ./generics/tourofgo-generics-types
+	go install ./methods/tourofgo-methods-errors
+	go install ./methods/tourofgo-methods-exererrors
+	go install ./methods/tourofgo-methods-exerimages
+	go install ./methods/tourofgo-methods-exerreaders
+	go install ./methods/tourofgo-methods-exerreadersrot13
+	go install ./methods/tourofgo-methods-exerstringers
+	go install ./methods/tourofgo-methods-functionspointers
+	go install ./methods/tourofgo-methods-images
+	go install ./methods/tourofgo-methods-interfaces
+	go install ./methods/tourofgo-methods-interfacesassert
+	go install ./methods/tourofgo-methods-interfacesempty
+	go install ./methods/tourofgo-methods-interfacesimpl
+	go install ./methods/tourofgo-methods-interfacesnil
+	go install ./methods/tourofgo-methods-interfacesnilvalues
+	go install ./methods/tourofgo-methods-interfacesswitch
+	go install ./methods/tourofgo-methods-interfacesvalue
+	go install ./methods/tourofgo-methods-methods
+	go install ./methods/tourofgo-methods-methodsfunc
+	go install ./methods/tourofgo-methods-methodsnonstruct
+	go install ./methods/tourofgo-methods-methodspointers
+	go install ./methods/tourofgo-methods-methodspointersind
+	go install ./methods/tourofgo-methods-methodspointersindrev
+	go install ./methods/tourofgo-methods-methodsreceiver
+	go install ./methods/tourofgo-methods-readers
+	go install ./methods/tourofgo-methods-stringer
+	go install ./moretypes/tourofgo-moretypes-arrays
+	go install ./moretypes/tourofgo-moretypes-exerfunctions
+	go install ./moretypes/tourofgo-moretypes-exermaps
+	go install ./moretypes/tourofgo-moretypes-exerslices
+	go install ./moretypes/tourofgo-moretypes-functionsclosure
+	go install ./moretypes/tourofgo-moretypes-functionsvalue
+	go install ./moretypes/tourofgo-moretypes-maps
+	go install ./moretypes/tourofgo-moretypes-mapsliteral
+	go install ./moretypes/tourofgo-moretypes-mapsliteralinference
+	go install ./moretypes/tourofgo-moretypes-mapsmutate
+	go install ./moretypes/tourofgo-moretypes-pointers
+	go install ./moretypes/tourofgo-moretypes-range
+	go install ./moretypes/tourofgo-moretypes-rangeskip
+	go install ./moretypes/tourofgo-moretypes-slices
+	go install ./moretypes/tourofgo-moretypes-slicesappend
+	go install ./moretypes/tourofgo-moretypes-slicesdefault
+	go install ./moretypes/tourofgo-moretypes-sliceslencap
+	go install ./moretypes/tourofgo-moretypes-slicesliteral
+	go install ./moretypes/tourofgo-moretypes-slicesmake
+	go install ./moretypes/tourofgo-moretypes-slicesnil
+	go install ./moretypes/tourofgo-moretypes-slicesofslice
+	go install ./moretypes/tourofgo-moretypes-slicesreference
+	go install ./moretypes/tourofgo-moretypes-structfields
+	go install ./moretypes/tourofgo-moretypes-structliterals
+	go install ./moretypes/tourofgo-moretypes-structpointers
+	go install ./moretypes/tourofgo-moretypes-structs
