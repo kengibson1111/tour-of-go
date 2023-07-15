@@ -24,6 +24,7 @@ func (t *T) M() {
 
 func main() {
 	var i I
+	describe(i)
 
 	var t *T
 	i = t
@@ -34,4 +35,3 @@ func main() {
 	describe(i)
 	i.M()
 }
-
