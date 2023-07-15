@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (concur) - main exercise for the Concurrency section of the tour. Maybe not the best code, but
-  it was easy to implement and satisfies requirements.
-
 * mutex - so channel communication is great for synchronizing routine execution. But if you don't need
   execution synchronization and only need data synchronization, golang offers a mutex. The sample
   shows this by starting 1000 routines all interested in the same data.
