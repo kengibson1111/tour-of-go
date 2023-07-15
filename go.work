@@ -23,6 +23,7 @@ use (
 	./concurrency/tourofgo-concurrency-channelsselect
 	./concurrency/tourofgo-concurrency-channelsselectdef
 	./concurrency/tourofgo-concurrency-exerconcur
+	./concurrency/tourofgo-concurrency-exermutex
 	./concurrency/tourofgo-concurrency-goroutines
 	./concurrency/tourofgo-concurrency-mutex
 	./flowcontrol/tourofgo-flowcontrol-defer
