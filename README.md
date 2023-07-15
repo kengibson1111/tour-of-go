@@ -4,8 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* EXERCISE (stringers) - pretty straightforward.
-
 * errors - another interface from the core package fmt is error. Many golang functions and methods return an
   instance of an error implementation. Then the caller can check if the returned error is nil and react
   appropriately. The sample code shows how to implement the error interface. In run(), MyError is created
