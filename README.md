@@ -4,10 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* mutex - so channel communication is great for synchronizing routine execution. But if you don't need
-  execution synchronization and only need data synchronization, golang offers a mutex. The sample
-  shows this by starting 1000 routines all interested in the same data.
-
 * EXERCISE (mutex) - last exercise building on previous lesson.
 
 ## keys-remote.sh

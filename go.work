@@ -24,6 +24,7 @@ use (
 	./concurrency/tourofgo-concurrency-channelsselectdef
 	./concurrency/tourofgo-concurrency-exerconcur
 	./concurrency/tourofgo-concurrency-goroutines
+	./concurrency/tourofgo-concurrency-mutex
 	./flowcontrol/tourofgo-flowcontrol-defer
 	./flowcontrol/tourofgo-flowcontrol-deferstack
 	./flowcontrol/tourofgo-flowcontrol-exerloops
