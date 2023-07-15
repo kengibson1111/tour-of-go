@@ -4,9 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (nil) - you can still get into trouble calling a method signature on an interface that has not been
-  assigned yet. It causes a runtime error because a method with the correct receiver has not been bound yet.
-
 * interfaces (empty) - just like in Java, you can have an empty interface. This does not bind any method signatures
   at runtime, but it does allow any type to be associated to an interface.
 

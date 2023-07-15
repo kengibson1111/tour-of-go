@@ -33,6 +33,7 @@ use (
 	./methods/tourofgo-methods-functionspointers
 	./methods/tourofgo-methods-interfaces
 	./methods/tourofgo-methods-interfacesimpl
+	./methods/tourofgo-methods-interfacesnil
 	./methods/tourofgo-methods-interfacesnilvalues
 	./methods/tourofgo-methods-interfacesvalue
 	./methods/tourofgo-methods-methods

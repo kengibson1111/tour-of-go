@@ -13,6 +13,10 @@ func describe(i I) {
 func main() {
 	var i I
 	describe(i)
-	i.M()
-}
 
+	if i == nil {
+		fmt.Println("nil interface value")
+	} else {
+		i.M()
+	}
+}
