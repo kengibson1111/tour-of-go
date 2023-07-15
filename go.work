@@ -21,6 +21,7 @@ use (
 	./concurrency/tourofgo-concurrency-channelsbuf
 	./concurrency/tourofgo-concurrency-channelsclose
 	./concurrency/tourofgo-concurrency-channelsselect
+	./concurrency/tourofgo-concurrency-channelsselectdef
 	./concurrency/tourofgo-concurrency-goroutines
 	./flowcontrol/tourofgo-flowcontrol-defer
 	./flowcontrol/tourofgo-flowcontrol-deferstack
