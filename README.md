@@ -4,11 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (assert) - types can be asserted and the assertion returns the value and a bool that indicates if the
-  assertion worked. Just the value can be returned, but that will cause a runtime error if the interface type
-  does not match the assertion. So it is a good practice to return the value and bool from an assertion if
-  there is any chance that the interface type does not match the assertion.
-
 * interfaces (switch) - you can use a short assignment to a type assertion in a switch statement.
 
 * stringer - Stringer is an interface from the core package fmt. The String() method signature is like the Java
