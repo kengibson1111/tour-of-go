@@ -4,14 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* channels (select) - another way to do the previous lesson without using close(). select waits until a
-  channel operation is ready, and if multiple channel operations are ready the channel operation order
-  is not guaranteed. Create 2 channels - not buffered. One channel is the main processing channel and the other
-  is a "quit" channel. fibonacci() has an endless loop sending ints on the main processing channel
-  and receiving ints on the "quit" channel. When one "quit" int is received, fibonacci() ends which also
-  ends main(). The Go routine receives 10 ints from the main processing channel and sends one int on the
-  "quit" channel.
-
 * channels (selectdef) - just showing that a default can be used in a select. This will activate when all
   channel operations on the select are blocked.
 
