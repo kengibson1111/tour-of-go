@@ -4,13 +4,6 @@ This is a companion repo for Go's [Tour of Go](https://go.dev/tour/welcome/1).[^
 
 ## Lessons
 
-* interfaces (nilvalues) - this is where it starts getting interesting. In the previous lesson, suppose t was nil
-  when i was assigned. In Java, that would mean a null interface and a potential null pointer exception. In golang,
-  the interface is not nil after assignment. It has a nil concrete value and type before assignment and is a nil
-  interface. After assignment, the type is not nil and the interface is bound to a matching method with the right
-  receiver. The concrete value could be nil, but in golang the method implementation can gracefully check for a nil
-  concrete value. Slick.
-
 * interfaces (nil) - you can still get into trouble calling a method signature on an interface that has not been
   assigned yet. It causes a runtime error because a method with the correct receiver has not been bound yet.
 
