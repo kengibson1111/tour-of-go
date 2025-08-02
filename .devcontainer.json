@@ -2,16 +2,12 @@
 	"image": "kengibson1111/godev",
 	"runArgs": [
 		"--rm",
-		"--network=bridge"
+		"--network=kglabs-net"
 	],
-	"containerEnv": {
-		"GIT_SSH_COMMAND": "ssh -i ~/.ssh/id_rsa_tour-of-go"
-	},
 	"mounts": [
 		"source=${localEnv:USERPROFILE}/docker-user-home,target=/root,type=bind,consistency=cached",
 		"source=${localEnv:USERPROFILE}/myprojects,target=/var/local/myprojects,type=bind,consistency=cached",
-		"source=//var/run/docker.sock,target=//var/run/docker.sock,type=bind,consistency=cached",
-		"source=${localEnv:USERPROFILE},target=/var/local/kubeparent,type=bind,consistency=cached"
+		"source=//var/run/docker.sock,target=//var/run/docker.sock,type=bind,consistency=cached"
 	],
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -26,16 +22,16 @@
                 "go.lintOnSave": "package",
                 "[go]": {
                     "editor.codeActionsOnSave": {
-                        "source.organizeImports": true
+                        "source.organizeImports": "always"
                     }
                 },
 				"go.buildTags": "",
 
 				"gopls": {
                     "usePlaceholders": false,
-                    "staticcheck": true,
-                    "vulncheck": "Imports"
+                    "staticcheck": true
                 },
+                "vulncheck": "Imports",
 
 				"go.testTimeout": "30s",
                 "go.coverOnSingleTest": true,
@@ -47,7 +43,9 @@
                 ]
 			},
 			"extensions": [
-				"golang.go"
+				"golang.Go",
+				"GitHub.copilot",
+				"golangci.golangci-lint"
 			]
 		}
 	}
